@@ -1,4 +1,4 @@
-package com.github.xpenatan.jmultiplaform.core;
+package com.github.xpenatan.jmultiplatform.core;
 
 public interface JPlatformCallback {
     /**
