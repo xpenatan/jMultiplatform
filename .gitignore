@@ -1,0 +1,25 @@
+# Temporary Files
+*~
+.*.swp
+.DS_STORE
+*.cache
+
+.gradle/
+build/
+
+*.iml
+*.a
+/.idea/
+.idea/
+workspace.xml
+tasks.xml
+local.properties
+*.class
+.settings
+out/
+*.ini
+.temp/
+*.log
+
+.codiumai
+.qodo
