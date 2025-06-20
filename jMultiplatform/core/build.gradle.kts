@@ -3,17 +3,21 @@ plugins {
     id("maven-publish")
 }
 
-group = "com.github.xpenatan"
-version = "0.1.2"
+val moduleName = "jMultiplatform"
+
+dependencies {
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
 
 publishing {
     publications {
-        create<MavenPublication>("mavenJava") {
+        create<MavenPublication>("maven") {
+            artifactId = moduleName
             from(components["java"])
-            artifactId = "jmultiplatform"
         }
     }
-}
-
-dependencies {
 }
