@@ -21,7 +21,7 @@ buildscript {
     }
 }
 
-allprojects()  {
+allprojects {
 
     apply {
         plugin("java")
@@ -32,10 +32,6 @@ allprojects()  {
         google()
         mavenCentral()
         maven { url = uri("https://central.sonatype.com/repository/maven-snapshots/") }
-        maven {
-            url = uri("http://teavm.org/maven/repository/")
-            isAllowInsecureProtocol = true
-        }
     }
 
     configurations.configureEach {
